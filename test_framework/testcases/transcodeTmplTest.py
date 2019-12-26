@@ -1,13 +1,13 @@
 import unittest
 import logging
-from ..common.operation_excel import OperationExcel
-from ..common.assert_results import AssertResult
-from ..common.myrequests import MyRequests
-from ..common.common import Common
-from ..base.base  import *
-from ..base.base import db_config_transsvc as db
-from .subunittest import SubUnittest
-from ..common.db import DbOperation
+from common.operation_excel import OperationExcel
+from common.assert_results import AssertResult
+from common.myrequests import MyRequests
+from common.common import Common
+from base.base  import *
+from base.base import db_config_transsvc as db
+from testcases.subunittest import SubUnittest
+from common.db import DbOperation
 import requests
 import json
 import ddt

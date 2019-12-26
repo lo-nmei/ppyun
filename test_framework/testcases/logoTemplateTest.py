@@ -4,10 +4,10 @@ import sys
 import unittest
 from BeautifulReport import  BeautifulReport as bf
 import logging
-from test_framework.common.operation_excel import OperationExcel
-from test_framework.common.assert_results import AssertResult
-from test_framework.common.myrequests import MyRequests
-from test_framework.base.base  import *
+from common.operation_excel import OperationExcel
+from common.assert_results import AssertResult
+from common.myrequests import MyRequests
+from base.base  import *
 import requests
 import json
 import ddt

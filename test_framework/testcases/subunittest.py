@@ -1,9 +1,9 @@
 import unittest
 import logging
-from ..common.operation_excel import OperationExcel
-from ..common.assert_results import AssertResult
-from ..common.myrequests import MyRequests
-from ..base.base  import *
+from common.operation_excel import OperationExcel
+from common.assert_results import AssertResult
+from common.myrequests import MyRequests
+from base.base  import *
 import requests
 import json
 import ddt

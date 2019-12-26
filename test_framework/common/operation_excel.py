@@ -5,7 +5,7 @@ from xlutils.copy import copy
 import sys
 sys.path.append("E:\\work\\python_scripts\\test_framework")
 #sys.path.append("E:\\work\\python_scripts\\test_framework\\testcases")
-from test_framework.base.base import *
+from base.base import *
 
 class OperationExcel():
     #excel第一行和第一列的索引为0

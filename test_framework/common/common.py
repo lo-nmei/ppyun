@@ -1,8 +1,7 @@
 # coding:utf-8
 import sys
-sys.path.append("E:\\work\\python_scripts\\test_framework")
-sys.path.append("E:\\work\\python_scripts\\test_framework\\testcases")
-from test_framework.base.base import *
+
+from base.base import *
 class Common():
     def itemReplace(self, itemList, old, new):
         if isinstance(itemList, list):
