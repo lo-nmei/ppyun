@@ -3,6 +3,7 @@
 import xlrd
 from xlutils.copy import copy
 import sys
+import os
 sys.path.append("E:\\work\\python_scripts\\test_framework")
 #sys.path.append("E:\\work\\python_scripts\\test_framework\\testcases")
 from base.base import *
@@ -69,12 +70,13 @@ class OperationExcel():
             raise TypeError("first argument must be list")
 if __name__ == "__main__" and __package__ is None:
     __package__ = "operation_excel"
+    print(os.getcwd())
 # if __name__ == "__main__":
 #     url1 = "http://domain_name/api/v1/trans/mt/add"
 #     url2 = "http://domain_name/api/v1/trans/mt/add111"
 #     print(domain_name)
 #     url1,url2 = OperationExcel().itemReplace([url1, url2], "domain_name", domain_name)
 #     print(url1,url2)
-print(__name__)
+
 
 

@@ -14,18 +14,21 @@ log_path = os.path.join(top_path, "report")
 filename = "report-" + time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime(time.time()))
 print(filename)
 rule = "logoTemplateTest.py"
-sys.stdout.flush()
+#sys.stdout.flush()
 # runner = unittest.TextTestRunner()
 # runner.run(discover)
 def add_case(rule):
     cases = unittest.defaultTestLoader.discover(caces_path, pattern = rule, top_level_dir=None)
     return cases
-@threads(5)
+@threads(10)
 def run(cases):
+    print("开始时间：{}".format(time.strftime("%H:%M:%S", time.localtime(time.time()))))
     runner = bf(cases)
-    runner.report(filename=filename, description="多线程测试", dir_path = log_path)
+    runner.report(filename=filename, description="多线程测试", report_dir = log_path)
 
 if __name__ == "__main__":
-    for i in add_case("logoTemplateTest.py"):
+    cases = add_case("logoTemplateTest.py")
+    print(cases)
+    for i in cases:
         run(i)
 
